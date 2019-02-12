@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
+    
+</head>
+<body>
+    
+    <form name="quizForm" action="">
+
+        <div class="question-box">
+            <img src="./img/frodo.png" alt="#"> 
+            <br>
+            <caption>Image<a href="https://en.wikipedia.org/wiki/Main_Page" target="_blank">Wikipedia</a></caption>
+            <br>
+            <label for="characterName">What is the name of this character?</label>
+            <br>
+            <input type="text" name="characterName" id="" required>
+        </div>
+
+        <br><hr><br>
+
+        <!-- <div class="question-box">
+            <p>Please select the names of all of the Ring-bearers from the list</p>
+            <br>
+            <label for="ringBearers">Frodo</label>
+            <input type="checkbox" name="ringBearers" value="Frodo" required id="">
+
+            <label for="ringBearers">Sam</label>
+            <input type="checkbox" name="ringBearers" value="Sam" id="">
+
+            <label for="ringBearers">Boromir</label>
+            <input type="checkbox" name="ringBearers" value="Boromir" id="">            
+
+            <label for="ringBearers">Aragorn</label>
+            <input type="checkbox" name="ringBearers" value="Aragorn" id="">    
+
+            <label for="ringBearers">Bilbo</label>
+            <input type="checkbox" name="ringBearers" value="Bilbo" id="">    
+        </div> -->
+
+        <br><hr><br>
+
+        <div class="question-box">
+            <label for="merrysName">What is Merry’s full name? Meriadoc or Merigreen</label>
+            <br>
+            <input type="text" name="merrysName" id="" pattern="Meriadoc|Merigreen" required>
+        </div>
+
+        <br><hr><br>
+
+        <div class="question-box">
+            <p>How many wizards in Middle-Earth?</p>
+            <br>
+            <label for="wizards">3</label>
+            <input type="radio" name="wizards" value="3"  id="" required>
+            <br>
+            <label for="wizards">5</label>
+            <input type="radio" name="wizards" value="5" id="">
+            <br>
+            <label for="wizards">2</label>
+            <input type="radio" name="wizards" value="2" id="">
+        </div>
+
+        <br><hr><br>
+
+        <div class="question-box">
+            <p>Who actually destroys the One Ring?</p>
+            <br>
+            <label for="ringDestroyer">Gandalf</label>
+            <input type="radio" name="ringDestroyer" id="" required>
+            <br>
+            <label for="ringDestroyer" >Gollum</label>
+            <input type="radio" name="ringDestroyer" value="Gullum" id="">
+            <br>
+            <label for="ringDestroyer">Sam</label>
+            <input type="radio" name="ringDestroyer" id="">
+            <br>
+            <label for="ringDestroyer">Frodo</label>
+            <input type="radio" name="ringDestroyer" id="">
+        </div>       
+
+        <br><hr><br>
+
+        <button type="submit" name="submitBtn" id="" value="Submit">Submit</button>
+
+    </form>
+
+    <div id="scoreBox"></div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
